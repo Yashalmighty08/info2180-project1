@@ -1,4 +1,39 @@
 /* Add your CSS to this file */
+
+header {
+    background-color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #5A67D8;
+}
 body {
     margin: 0;
     font-size: 16px;
@@ -8,4 +43,148 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.overview-hero {
+    background-color: #E2E8F0;
+}
+
+.overview-hero .container {
+    display: fex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overview-hero-image,
+.overview-hero-text {
+    flex: 1;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #48BB78;
+    margin-top: 0;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #48BB78;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.stories h2,
+.stories a {
+    color: #5A67DB;
+}
+
+.stories article {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stories article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.stories h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.newsletter input {
+    padding: 12px;
+    font-size: 10px;
+    width: 280px;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+}
+
+.message {
+    margin-top: 16px;
+    min-height: 1.5em;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin: 0;
 }
